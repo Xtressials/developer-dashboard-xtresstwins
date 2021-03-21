@@ -6,6 +6,7 @@
         "node-red-contrib-web-worldmap":"2.x",
         "node-red-node-twilio":"0.x",
         "node-red-node-ui-table":"0.x",
+        "countryjs":"1.8.0",
         "@cloudant/cloudant": "^4.3.1",
         "bcrypt": "^5.0.1",
         "body-parser": "1.x",
