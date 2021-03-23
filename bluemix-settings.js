@@ -26,7 +26,7 @@ const REGEX_LEADING_ALPHA = /^[^a-zA-Z]*/;
 const REGEX_ALPHA_NUM = /[^a-zA-Z0-9]/g;
 
 function _sanitizeAppName(name) {
-    name = name || 'node-red';
+    name = name || 'node-red-developer-dashboard-xtresstwins';
     return name.toLowerCase().replace(REGEX_LEADING_ALPHA, '').replace(REGEX_ALPHA_NUM, '');
 }
 
@@ -100,9 +100,9 @@ if (!cloudantUrl) {
         // The URL to use
         url: cloudantUrl,
         // The name of the database to use
-        db: process.env.NODE_RED_STORAGE_DB_NAME || "nodered",
+        db: process.env.NODE_RED_STORAGE_DB_NAME || "node-red-developer-dashboard-xtresstwins",
         // The prefix for all document names stored by this instance.
-        prefix: process.env.NODE_RED_STORAGE_APP_NAME || "nodered"
+        prefix: process.env.NODE_RED_STORAGE_APP_NAME || "node-red-developer-dashboard-xtresstwins"
     }
     util.log("Using Cloudant service: "+settings.cloudantService.name+" db:"+settings.cloudantService.db+" prefix:"+settings.cloudantService.prefix);
     settings.storageModule = require("./cloudantStorage");
